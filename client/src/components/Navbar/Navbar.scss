@@ -1,0 +1,239 @@
+$primaryColor: #03658c;
+$secondaryColor: #e1e1e1;
+$backgroundColor: #0d0d0d;
+$thirdColor: #07b2d9;
+$titleFont: Pirata One;
+$secondFont: inter;
+
+// Mobile version below //
+@media screen and (max-width: 992px) {
+  // Remove desktop version
+  .items_nav_list,
+  .main_logo {
+    display: none;
+  }
+
+  * {
+    margin: 0;
+  }
+  body {
+    background-color: $secondaryColor;
+  }
+
+  .logo_mobile {
+    width: 10vw;
+    margin: auto;
+    display: flex;
+  }
+  .logo_bar {
+    background-color: $backgroundColor;
+  }
+  .sticky_top_bar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: $backgroundColor;
+  }
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    max-width: 36px;
+    max-height: 36px;
+    left: 3vw;
+    top: 3vw;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $thirdColor;
+  }
+
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: $primaryColor;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: $thirdColor;
+  }
+
+  .menu-item {
+    font-family: $titleFont;
+    color: $secondaryColor;
+    text-decoration: none;
+  }
+
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: $backgroundColor;
+    padding: 2em 1.5em 0;
+    font-size: 1.5em;
+    overflow: hidden !important;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: $backgroundColor;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: $primaryColor;
+    padding: 0.8em;
+    height: 10%;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: hsla(0, 0%, 100%, 1);
+  }
+}
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+// Desktop version below //
+
+// Desktop version below //
+@media screen and (min-width: 993px) {
+  /* resets */
+  body {
+    background-color: $secondaryColor;
+  }
+  *,
+  *::before,
+  *::after {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo_mobile {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
+  #react-burger-menu-btn {
+    display: none;
+  }
+  .bm-burger-button {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+  .sidenav {
+    display: none;
+  }
+  .logo_and_nav {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: $backgroundColor;
+  }
+  .main_logo {
+    width: 5vw;
+    display: flex;
+    margin: auto;
+  }
+  a {
+    color: $secondaryColor;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* visual stuff */
+
+  ul {
+    font-family: system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+  .logo_and_nav {
+    background-color: $backgroundColor;
+  }
+  /* main stuff */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li {
+    position: relative;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+  }
+
+  li::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 7px;
+    background-color: $primaryColor;
+
+    scale: 0 1;
+
+    transition-timing-function: ease;
+    transition-duration: 250ms;
+    transition-property: scale, translate;
+  }
+
+  li:hover::after {
+    scale: 1 1;
+  }
+
+  @supports (selector(:has(*))) {
+    li:hover + li::after {
+      translate: -100% 0;
+    }
+
+    li:has(+ li:hover)::after {
+      translate: 100% 0;
+    }
+  }
+}

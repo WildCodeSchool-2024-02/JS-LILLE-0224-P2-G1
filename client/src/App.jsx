@@ -1,7 +1,8 @@
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
-  return <div>PROJECT CLEANED</div>;
+  return <Navbar />;
 }
 
 export default App;
