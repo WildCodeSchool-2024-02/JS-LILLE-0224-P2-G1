@@ -17,8 +17,6 @@ function App() {
       });
   }, []);
 
-  // `https://beers.utop.workers.dev/beers?abv_min=${choixduuser}`
-
   return <div>{beersList && <CardsList beerList={beersList} />}</div>;
 }
 

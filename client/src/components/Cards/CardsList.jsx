@@ -6,7 +6,7 @@ function CardsList({ beerList }) {
   return (
     <div className="containers">
       {beerList.map((beer) => (
-        <Card Beer={beer} key={`${beer.name}-${beer.id}`} />
+        <Card beer={beer} key={`${beer.name}-${beer.id}`} />
       ))}
       ;
     </div>
