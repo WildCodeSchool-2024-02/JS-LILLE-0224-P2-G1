@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
 import CardsList from "./components/Cards/CardsList";
 
 function App() {
@@ -17,7 +18,11 @@ function App() {
       });
   }, []);
 
-  return <div>{beersList && <CardsList beerList={beersList} />}</div>;
+  return (
+    <>
+      <Navbar />
+      <div>{beersList && <CardsList beerList={beersList} />}</div>
+    </>
+  );
 }
-
 export default App;
