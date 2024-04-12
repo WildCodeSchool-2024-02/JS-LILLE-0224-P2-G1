@@ -16,6 +16,7 @@ $secondFont: inter;
   * {
     margin: 0;
   }
+
   body {
     background-color: $secondaryColor;
   }
@@ -25,15 +26,18 @@ $secondFont: inter;
     margin: auto;
     display: flex;
   }
+
   .logo_bar {
     background-color: $backgroundColor;
   }
+
   .sticky_top_bar {
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: $backgroundColor;
   }
+
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: absolute;
@@ -111,29 +115,13 @@ $secondFont: inter;
     background: hsla(0, 0%, 100%, 1);
   }
 }
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
-// Desktop version below //
 
 // Desktop version below //
 @media screen and (min-width: 993px) {
-  /* resets */
   body {
     background-color: $secondaryColor;
   }
+
   *,
   *::before,
   *::after {
@@ -142,15 +130,19 @@ $secondFont: inter;
     padding: 0;
     box-sizing: border-box;
   }
+
   .logo_mobile {
     display: none;
   }
+
   .bm-burger-bars {
     display: none;
   }
+
   #react-burger-menu-btn {
     display: none;
   }
+
   .bm-burger-button {
     display: none;
   }
@@ -158,20 +150,24 @@ $secondFont: inter;
   .btn {
     display: none;
   }
+
   .sidenav {
     display: none;
   }
+
   .logo_and_nav {
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: $backgroundColor;
   }
+
   .main_logo {
     width: 5vw;
     display: flex;
     margin: auto;
   }
+
   a {
     color: $secondaryColor;
     text-decoration: none;
@@ -181,18 +177,17 @@ $secondFont: inter;
     list-style: none;
   }
 
-  /* visual stuff */
-
   ul {
     font-family: system-ui, sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
     text-transform: capitalize;
   }
+
   .logo_and_nav {
     background-color: $backgroundColor;
   }
-  /* main stuff */
+
   ul {
     display: flex;
     flex-wrap: wrap;
