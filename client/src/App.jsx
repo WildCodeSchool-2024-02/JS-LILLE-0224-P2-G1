@@ -5,10 +5,6 @@ import Navbar from "./components/Navbar/Navbar";
 import CardsList from "./components/Cards/CardsList";
 
 function App() {
-  return <Navbar />;
-
-
-function App() {
   const [beersList, setBeersList] = useState();
 
   useEffect(() => {
@@ -22,7 +18,11 @@ function App() {
       });
   }, []);
 
-  return <div>{beersList && <CardsList beerList={beersList} />}</div>;
+  return (
+    <>
+      <Navbar />
+      <div>{beersList && <CardsList beerList={beersList} />}</div>
+    </>
+  );
 }
-
 export default App;

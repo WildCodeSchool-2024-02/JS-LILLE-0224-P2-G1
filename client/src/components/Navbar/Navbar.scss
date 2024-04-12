@@ -7,7 +7,6 @@ $secondFont: inter;
 
 // Mobile version below //
 @media screen and (max-width: 992px) {
-  // Remove desktop version
   .items_nav_list,
   .main_logo {
     display: none;
@@ -77,9 +76,9 @@ $secondFont: inter;
   }
 
   /*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
