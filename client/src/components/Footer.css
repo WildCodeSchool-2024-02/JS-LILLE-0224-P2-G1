@@ -1,0 +1,58 @@
+.container {
+  color: red;
+  background-color: #0d0d0d;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container img {
+  width: 130px;
+}
+
+.alcohol_danger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.alcohol_danger P {
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.footer_bottom {
+  display: flex;
+  height: -webkit-fill-available;
+  align-items: flex-end;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  color: #07b2d9;
+}
+
+.white_text {
+  color: white;
+}
+
+.footer_bottom p:nth-child(1) {
+  font-size: 12px;
+}
+
+.social_networks {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  color: #07b2d9;
+}
+
+.social_networks .fa-icon:hover {
+  color: white;
+}
+
+.fa_icon {
+  transition: color 0.3s ease;
+}

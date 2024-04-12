@@ -1,7 +1,12 @@
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
-  return <div>PROJECT CLEANED</div>;
+  return <div>
+    <Footer />
+  </div>;
+
+
 }
 
 export default App;
