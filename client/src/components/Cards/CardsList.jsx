@@ -4,7 +4,7 @@ import "./CardsList.css";
 
 function CardsList({ beerList }) {
   return (
-    <div className="containers">
+    <div className="beer_mapping">
       {beerList.map((beer) => (
         <Card beer={beer} key={`${beer.name}-${beer.id}`} />
       ))}

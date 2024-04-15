@@ -1,23 +1,23 @@
-.container {
-  color: red;
+.footer_container {
+  color: pink;
   background-color: #0d0d0d;
   height: 200px;
   display: flex;
   flex-direction: column;
 }
 
-.container img {
+.alcohol_warning_picto {
   width: 130px;
 }
 
-.alcohol_danger {
+.alcohol_warning {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 45px;
 }
 
-.alcohol_danger P {
+.alcohol_warning_text {
   margin-left: 10px;
   font-size: 25px;
   text-align: center;
@@ -34,7 +34,7 @@
   color: #07b2d9;
 }
 
-.white_text {
+.legal_mentions {
   color: white;
 }
 
@@ -42,7 +42,7 @@
   font-size: 12px;
 }
 
-.social_networks {
+.social_networks_footer {
   display: flex;
   gap: 10px;
   font-size: 30px;

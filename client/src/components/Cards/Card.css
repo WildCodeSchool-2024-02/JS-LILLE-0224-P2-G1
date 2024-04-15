@@ -1,4 +1,4 @@
-.container {
+.card_container {
   border: solid whitesmoke 0.2em;
   background-color: #60d8f3;
   border-radius: 2em;
@@ -25,7 +25,7 @@ h3 {
 }
 
 p,
-blockquote {
+.beer_description {
   font-family: Inter;
   display: flex;
   justify-content: center;
@@ -33,21 +33,21 @@ blockquote {
   padding: 0.6em;
 }
 
-blockquote {
+.beer_description {
   font-style: italic;
 }
 
-.properties {
+.beer_properties {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.property {
+.beer_ABVIBU {
   padding: 0 1em 0 1em;
 }
 
-.infos {
+.beer_infos {
   position: relative;
   bottom: -20px;
 }
