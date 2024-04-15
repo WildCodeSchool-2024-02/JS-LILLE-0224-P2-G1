@@ -10,8 +10,8 @@ function Navbar() {
           <a id="home" className="menu-item" href="https://www.brewdog.com/fr">
             Home
           </a>
-          <a id="beer" className="menu-item" href="https://www.brewdog.com/fr">
-            Beer
+          <a id="story" className="menu-item" href="https://www.brewdog.com/fr">
+            Our Story
           </a>
           <a
             id="random_beer"
@@ -50,7 +50,7 @@ function Navbar() {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Beer</a>
+                <a href="#">Our Story</a>
               </li>
               <li>
                 <a href="#">Random Beer</a>

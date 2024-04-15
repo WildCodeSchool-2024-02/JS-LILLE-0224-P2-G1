@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+.random_btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #03658c;
+  padding: 10px 30px;
+  border: solid #72e5f2 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 973ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.random_btn:hover {
+  transition: 973ms;
+  padding: 10px 50px;
+  transform: translateY(-0px);
+  background-color: #72e5f2;
+  color: #0d0d0d;
+  border: solid 2px #03658c;
+}
+
+.beer_randomizing {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
