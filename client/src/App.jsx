@@ -1,7 +1,8 @@
 import "./App.css";
+import StoryContent from "./components/StoryContent";
 
 function App() {
-  return <div>PROJECT CLEANED</div>;
+  return <StoryContent />;
 }
 
 export default App;
