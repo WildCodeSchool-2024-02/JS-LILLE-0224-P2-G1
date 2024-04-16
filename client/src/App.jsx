@@ -3,14 +3,17 @@ import axios from "axios";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import CardsList from "./components/Cards/CardsList";
+import Filter from "./components/Filters/Filter";
 
 function App() {
-  const [beersList, setBeersList] = useState();
+  const [basicBeersList, setBasicBeersList] = useState();
+  const [beersList, setBeersList] = useState(basicBeersList);
 
   useEffect(() => {
     axios
       .get("https://beers.utop.workers.dev")
       .then((response) => {
+        setBasicBeersList(response.data);
         setBeersList(response.data);
       })
       .catch((error) => {
@@ -21,6 +24,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Filter setBeersList={setBeersList} basicBeersList={basicBeersList} />
       <div>{beersList && <CardsList beerList={beersList} />}</div>
     </>
   );

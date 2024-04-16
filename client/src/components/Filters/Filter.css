@@ -1,0 +1,46 @@
+/* FILTER BUTTON */
+.filterButton {
+  background-color: #07b2d9;
+  border-radius: 10px;
+  font-family: Pirata One;
+  font-size: 26pt;
+  border: solid whitesmoke 0.1em;
+  margin: 0.5em 0.5em 0em;
+  color: #023377;
+}
+
+/* CHECKBOX FILTER */
+.fieldsetFilter {
+  width: 20rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: Inter;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  border: solid 1px;
+  margin-left: 1em;
+}
+
+label {
+  font-size: smaller;
+  padding-left: 0.2em;
+}
+
+legend {
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+/* MIN MAX FILTER */
+
+/*VALIDATE BUTTON*/
+.validateButton {
+  background-color: #07b2d9;
+  border-radius: 10px;
+  font-family: Pirata One;
+  font-size: 18pt;
+  border: solid whitesmoke 0.1em;
+  margin: 0.5em 0.5em 0em;
+  color: #023377;
+  margin-left: 0.8em;
+}
