@@ -74,14 +74,8 @@ function Checkbox({ typesSelected, setTypesSelected }) {
 }
 
 Checkbox.propTypes = {
-  setTypesSelected: PropTypes.arrayOf(
-  PropTypes.shape({
-    image_url: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    abv: PropTypes.number.isRequired,
-    ibu: PropTypes.number.isRequired,
-  })
-).isRequired,
-typesSelected: PropTypes.string.isRequired,
-}
+  setTypesSelected: PropTypes.func.isRequired,
+  typesSelected: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
+
 export default Checkbox;

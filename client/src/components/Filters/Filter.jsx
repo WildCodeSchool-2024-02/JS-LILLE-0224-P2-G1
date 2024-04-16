@@ -52,15 +52,12 @@ Filter.propTypes = {
       abv: PropTypes.number.isRequired,
       ibu: PropTypes.number.isRequired,
     })
-  ).isRequired,
-  setBeersList: PropTypes.arrayOf(
-    PropTypes.shape({
-      image_url: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-      abv: PropTypes.number.isRequired,
-      ibu: PropTypes.number.isRequired,
-    })
-  ).isRequired,
+  ),
+  setBeersList: PropTypes.func.isRequired,
+};
+
+Filter.defaultProps = {
+  basicBeersList: [],
 };
 
 export default Filter;
