@@ -34,7 +34,9 @@ function Footer() {
           <FontAwesomeIcon icon={faYoutube} className="fa_icon" />
           <FontAwesomeIcon icon={faTwitter} className="fa_icon" />
         </div>
-        <p>Created by Alexandre, Benoit, Elodie, Mathieu and Vincent</p>
+        <p className="creators">
+          Created by Alexandre, Benoit, Elodie, Mathieu and Vincent
+        </p>
       </div>
     </div>
   );
