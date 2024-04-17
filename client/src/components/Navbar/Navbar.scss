@@ -18,18 +18,20 @@ $secondFont: inter;
     background-color: $secondaryColor;
   }
   .logo_mobile {
-    width: 10vw;
+    width: 15vw;
     margin: auto;
     display: flex;
   }
   .logo_bar {
     background-color: $backgroundColor;
+    width: 100vw;
   }
   .sticky_top_bar {
     position: sticky;
     top: 0;
     z-index: 99;
     background-color: $backgroundColor;
+    width: 100%;
   }
   /* Position and sizing of burger button */
   .bm-burger-button {

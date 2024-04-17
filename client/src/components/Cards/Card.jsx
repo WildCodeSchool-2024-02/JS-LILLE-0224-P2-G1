@@ -10,7 +10,7 @@ function Card({ beer }) {
         <p>{beer.type}</p>
         <div className="beer_properties">
           <p className="beer_ABVIBU"> {beer.abv}%</p>
-          <p className="beer_ABVIBU">ibu: {beer.ibu}</p>
+          <p className="beer_ABVIBU">IBU: {beer.ibu}</p>
         </div>
         <blockquote className="beer_description">{beer.description}</blockquote>
       </div>
@@ -19,7 +19,14 @@ function Card({ beer }) {
 }
 
 Card.propTypes = {
-  beer: PropTypes.string.isRequired,
+  beer: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image_url: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    abv: PropTypes.number.isRequired,
+    ibu: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Card;
