@@ -19,7 +19,14 @@ function Card({ beer }) {
 }
 
 Card.propTypes = {
-  beer: PropTypes.string.isRequired,
+  beer: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    image_url: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    abv: PropTypes.number.isRequired,
+    ibu: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Card;

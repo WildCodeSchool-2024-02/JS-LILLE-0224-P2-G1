@@ -5,6 +5,7 @@ import RandomBeerList from "./components/RandomBeer/RandomBeerList";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import CardsList from "./components/Cards/CardsList";
+import Filter from "./components/Filters/Filter";
 
 function App() {
   const [beersList, setBeersList] = useState();
@@ -13,6 +14,7 @@ function App() {
     axios
       .get("https://beers.utop.workers.dev")
       .then((response) => {
+        // setBasicBeersList(response.data);
         setBeersList(response.data);
       })
       .catch((error) => {
@@ -25,6 +27,9 @@ function App() {
       {" "}
       <Navbar />
       <div>{beersList && <RandomBeerList beerList={beersList} />}</div>
+      <Filter
+        setBeersList={setBeersList} /* basicBeersList={basicBeersList} */
+      />
       <div>{beersList && <CardsList beerList={beersList} />}</div>
       {/* special syntax for beerslist to avoid autorefresh */}
       <Footer />

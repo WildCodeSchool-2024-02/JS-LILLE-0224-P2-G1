@@ -1,0 +1,64 @@
+import axios from "axios";
+import PropTypes from "prop-types";
+import { useState } from "react";
+import Checkbox from "./Checkbox";
+import MinMax from "./MinMax";
+import Validate from "./Validate";
+import "./Filter.css";
+
+function Filter({ setBeersList }) {
+  const [dropdown, setDropdown] = useState(false);
+  const [typesSelected, setTypesSelected] = useState([]);
+  const [inputValueAbvMin, setInputValueAbvMin] = useState(0);
+  const [inputValueAbvMax, setInputValueAbvMax] = useState(55);
+  const [inputValueIbuMin, setInputValueIbuMin] = useState(0);
+  const [inputValueIbuMax, setInputValueIbuMax] = useState(150);
+
+  const handleClickValidate = () => {
+    axios
+      .get(
+        `https://beers.utop.workers.dev/beers?beer_type=${typesSelected}&abv_min=${inputValueAbvMin}&abv_max=${inputValueAbvMax}&ibu_min=${inputValueIbuMin}&ibu_max=${inputValueIbuMax}`
+      )
+      .then((response) => {
+        setBeersList(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  return (
+    <div>
+      <button
+        type="button"
+        className="filterButton"
+        onClick={() => setDropdown(!dropdown)} // Fonction permettant de dérouler le menu des filtres au clic sur bouton
+      >
+        Filter
+      </button>
+      {dropdown && ( // si dropdown est "TRUE" affiche la div çi-dessous
+        <div className="FiltersContainer">
+          <Checkbox
+            typesSelected={typesSelected}
+            setTypesSelected={setTypesSelected}
+          />
+          <MinMax
+            inputValueAbvMin={inputValueAbvMin}
+            setInputValueAbvMin={setInputValueAbvMin}
+            inputValueAbvMax={inputValueAbvMax}
+            setInputValueAbvMax={setInputValueAbvMax}
+            setInputValueIbuMin={setInputValueIbuMin}
+            setInputValueIbuMax={setInputValueIbuMax}
+          />
+          <Validate handleClickValidate={handleClickValidate} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+Filter.propTypes = {
+  setBeersList: PropTypes.func.isRequired,
+};
+
+export default Filter;
