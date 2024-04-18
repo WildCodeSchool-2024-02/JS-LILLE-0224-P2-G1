@@ -1,34 +1,15 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import StoryContent from "./components/StoryContent";
-import RandomBeerList from "./components/RandomBeer/RandomBeerList";
-import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
-import CardsList from "./components/Cards/CardsList";
+import Footer from "./components/Footer/Footer";
 
-function App() { 
-
-  const [beersList, setBeersList] = useState();
-
-  useEffect(() => {
-    axios
-      .get("https://beers.utop.workers.dev")
-      .then((response) => {
-        setBeersList(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
-
+function App() {
   return (
     <>
-      {" "}
       <Navbar />
-      <div>{beersList && <RandomBeerList beerList={beersList} />}</div>
-      <div>{beersList && <CardsList beerList={beersList} />}</div>
-      {/* special syntax for beerslist to avoid autorefresh */}<StoryContent />;
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </>
   );

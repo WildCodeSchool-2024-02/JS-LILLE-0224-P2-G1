@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Link } from "react-router-dom";
 import { bubble as Menu } from "react-burger-menu";
 import "./Navbar.scss";
 import logoCat from "../../assets/images/BrewCat.svg";
@@ -8,23 +9,18 @@ function Navbar() {
     <>
       <div className="sticky_top_bar">
         <Menu>
-          <a id="home" className="menu-item" href="https://www.brewdog.com/fr">
+          <Link id="home" className="menu-item" to="/">
             Home
-          </a>
-          <a id="story" className="menu-item" href="https://www.brewdog.com/fr">
+          </Link>
+          <Link id="story" className="menu-item" to="/ourstory">
             Our Story
-          </a>
-          <a
-            id="random_beer"
-            className="menu-item"
-            href="https://www.brewdog.com/fr"
-          >
+          </Link>
+          <Link id="random_beer" className="menu-item" to="/randombeer">
             Random Beer
-          </a>
-          <a id="story" className="menu-item" href="https://www.brewdog.com/fr">
-            Histoire
-          </a>
+          </Link>
         </Menu>
+        {/* This Menu compo is used for displaying menu-burger package so mobile only */}
+
         <div className="logo_bar">
           <a href="" className="link_backhome">
             <img src={logoCat} alt="logo" className="logo_mobile" />
@@ -40,16 +36,17 @@ function Navbar() {
             <ul className="nav_list">
               {/* TODO : ajouter les liens */}
               <li>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#">Our Story</a>
+                <Link to="/ourstory">Our Story</Link>
               </li>
               <li>
-                <a href="#">Random Beer</a>
+                {/* <a href="/RandomBeer">Random Beer</a> */}
+                <Link to="/randombeer">Random Beer</Link>
               </li>
               <li>
-                <a href="#">Contacts</a>
+                <a href="#">Tasting Sessions</a>
               </li>
             </ul>
           </div>
