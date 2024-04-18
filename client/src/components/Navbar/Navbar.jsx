@@ -22,14 +22,14 @@ function Navbar() {
         {/* This Menu compo is used for displaying menu-burger package so mobile only */}
 
         <div className="logo_bar">
-          <a href="" className="link_backhome">
+          <a href="http://localhost:3000//" className="link_backhome">
             <img src={logoCat} alt="logo" className="logo_mobile" />
           </a>
         </div>
       </div>
       <div className="logo_and_nav">
         <nav>
-          <a href="" className="link_backhome">
+          <a href="http://localhost:3000/" className="link_backhome">
             <img src={logoCat} alt="logo" className="main_logo" />
           </a>
           <div className="items_nav_list">
