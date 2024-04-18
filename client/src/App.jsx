@@ -14,7 +14,6 @@ function App() {
     axios
       .get("https://beers.utop.workers.dev")
       .then((response) => {
-        // setBasicBeersList(response.data);
         setBeersList(response.data);
       })
       .catch((error) => {
@@ -27,9 +26,7 @@ function App() {
       {" "}
       <Navbar />
       <div>{beersList && <RandomBeerList beerList={beersList} />}</div>
-      <Filter
-        setBeersList={setBeersList} /* basicBeersList={basicBeersList} */
-      />
+      <Filter setBeersList={setBeersList} />
       <div>{beersList && <CardsList beerList={beersList} />}</div>
       {/* special syntax for beerslist to avoid autorefresh */}
       <Footer />

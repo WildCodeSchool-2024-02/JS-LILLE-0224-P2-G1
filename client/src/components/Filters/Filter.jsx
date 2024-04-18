@@ -33,7 +33,6 @@ function Filter({ setBeersList }) {
     axios
       .get("https://beers.utop.workers.dev")
       .then((response) => {
-        // setBasicBeersList(response.data);
         setBeersList(response.data);
       })
       .catch((error) => {

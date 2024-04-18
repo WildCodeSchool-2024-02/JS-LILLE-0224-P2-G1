@@ -18,7 +18,7 @@ function Checkbox({ typesSelected, setTypesSelected, resetFilter, setReset }) {
     for (let i = 0; i < inputCheck.length; i += 1) {
       inputCheck[i].checked = false;
     }
-    // les remet sous forme de tableau ?
+    // les remet sous forme de tableau
     setTypesSelected([]);
     // arret de la boucle
     setReset(!resetFilter);
