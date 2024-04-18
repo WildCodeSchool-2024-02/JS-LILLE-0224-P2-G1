@@ -5,7 +5,22 @@ function MinMax({
   setInputValueAbvMax,
   setInputValueIbuMin,
   setInputValueIbuMax,
+  resetFilter,
+  setReset,
 }) {
+  // RESET FILTER : boucle sur les input et les passe tous en vide "" en leur assignant les valeurs de départ
+  if (resetFilter) {
+    const inputMinMax = document.getElementsByTagName("input");
+    for (let i = 0; i < inputMinMax.length; i += 1) {
+      inputMinMax[i].value = "";
+    }
+    setInputValueAbvMin(0);
+    setInputValueAbvMax(55);
+    setInputValueIbuMin(0);
+    setInputValueIbuMax(150);
+    setReset(!resetFilter);
+  }
+
   const handleChangeAbvMin = (event) => {
     let abvMin;
     if (event.target.value > 55 || event.target.value < 0) {
@@ -126,6 +141,8 @@ MinMax.propTypes = {
   setInputValueAbvMax: PropTypes.func.isRequired,
   setInputValueIbuMin: PropTypes.func.isRequired,
   setInputValueIbuMax: PropTypes.func.isRequired,
+  resetFilter: PropTypes.func.isRequired,
+  setReset: PropTypes.func.isRequired,
 };
 
 export default MinMax;

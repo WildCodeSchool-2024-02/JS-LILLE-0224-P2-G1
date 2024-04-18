@@ -1,6 +1,8 @@
 import axios from "axios";
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
 import Checkbox from "./Checkbox";
 import MinMax from "./MinMax";
 import Validate from "./Validate";
@@ -13,6 +15,7 @@ function Filter({ setBeersList }) {
   const [inputValueAbvMax, setInputValueAbvMax] = useState(55);
   const [inputValueIbuMin, setInputValueIbuMin] = useState(0);
   const [inputValueIbuMax, setInputValueIbuMax] = useState(150);
+  const [reset, setReset] = useState(false);
 
   const handleClickValidate = () => {
     axios
@@ -26,6 +29,21 @@ function Filter({ setBeersList }) {
         console.error(error);
       });
   };
+  const DisplayBeers = () => {
+    axios
+      .get("https://beers.utop.workers.dev")
+      .then((response) => {
+        // setBasicBeersList(response.data);
+        setBeersList(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+  const handleReset = () => {
+    setReset(true);
+    DisplayBeers();
+  };
 
   return (
     <div>
@@ -36,13 +54,19 @@ function Filter({ setBeersList }) {
       >
         Filter
       </button>
+
+      <FontAwesomeIcon onClick={handleReset} icon={faRotateRight} />
       {dropdown && ( // si dropdown est "TRUE" affiche la div çi-dessous
         <div className="FiltersContainer">
           <Checkbox
+            resetFilter={reset}
+            setReset={setReset}
             typesSelected={typesSelected}
             setTypesSelected={setTypesSelected}
           />
           <MinMax
+            resetFilter={reset}
+            setReset={setReset}
             inputValueAbvMin={inputValueAbvMin}
             setInputValueAbvMin={setInputValueAbvMin}
             inputValueAbvMax={inputValueAbvMax}

@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
-function Checkbox({ typesSelected, setTypesSelected }) {
+function Checkbox({ typesSelected, setTypesSelected, resetFilter, setReset }) {
+  // NOM de L'INPUT : fonction qui récupère le nom des checkbox qui ont changé d'état
   const handleChangeCheckbox = (e) => {
-    //
     if (typesSelected.includes(e.target.name)) {
       setTypesSelected(typesSelected.filter((item) => item !== e.target.name));
     } else {
@@ -11,6 +11,18 @@ function Checkbox({ typesSelected, setTypesSelected }) {
       setTypesSelected(newArray);
     }
   };
+
+  // RESET FILTER : boucle sur les checkbox et les passe tous en false
+  if (resetFilter) {
+    const inputCheck = document.getElementsByTagName("input");
+    for (let i = 0; i < inputCheck.length; i += 1) {
+      inputCheck[i].checked = false;
+    }
+    // les remet sous forme de tableau ?
+    setTypesSelected([]);
+    // arret de la boucle
+    setReset(!resetFilter);
+  }
 
   return (
     <div>
@@ -74,7 +86,9 @@ function Checkbox({ typesSelected, setTypesSelected }) {
 
 Checkbox.propTypes = {
   setTypesSelected: PropTypes.func.isRequired,
-  typesSelected: PropTypes.arrayOf(PropTypes.string).isRequired,
+  typesSelected: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  resetFilter: PropTypes.func.isRequired,
+  setReset: PropTypes.func.isRequired,
 };
 
 export default Checkbox;
