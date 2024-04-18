@@ -8,7 +8,7 @@ function CardsList({ beerList }) {
       {beerList.map((beer) => (
         <Card beer={beer} key={`${beer.name}-${beer.id}`} />
       ))}
-      ;
+      
     </div>
   );
 }

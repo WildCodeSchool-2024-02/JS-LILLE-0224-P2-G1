@@ -22,19 +22,20 @@ function Footer() {
         </p>
       </div>
       <div className="footer_bottom">
-        <p>
+        <div>
           <span className="legal_mentions">
-            © Copyright BrewCat 2015-2024 - Tous droits réservés.
+            © Copyright BrewCat 2015-2024 - All rights reserved.{" "}
           </span>
-          Mentions légales
-        </p>
+          Legal Notice
+        </div>
+
         <div className="social_networks_footer">
           <FontAwesomeIcon icon={faFacebook} className="fa_icon" />
           <FontAwesomeIcon icon={faInstagram} className="fa_icon" />
           <FontAwesomeIcon icon={faYoutube} className="fa_icon" />
           <FontAwesomeIcon icon={faTwitter} className="fa_icon" />
         </div>
-        <p>Site créé par Alexandre, Benoit, Élodie, Mathieu et Vincent</p>
+        <div>Site created by Alexandre, Benoit, Elodie, Mathieu et Vincent</div>
       </div>
     </div>
   );
