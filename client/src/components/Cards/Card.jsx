@@ -10,7 +10,7 @@ function Card({ beer }) {
         <p>{beer.type}</p>
         <div className="beer_properties">
           <p className="beer_ABVIBU"> {beer.abv}%</p>
-          <p className="beer_ABVIBU">ibu: {beer.ibu}</p>
+          <p className="beer_ABVIBU">IBU: {beer.ibu}</p>
         </div>
         <blockquote className="beer_description">{beer.description}</blockquote>
       </div>
