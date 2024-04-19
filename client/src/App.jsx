@@ -7,6 +7,7 @@ import RandomBeerList from "./components/RandomBeer/RandomBeerList";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import CardsList from "./components/Cards/CardsList";
+import Filter from "./components/Filters/Filter";
 import CardTasting from "./components/CardsTasting/CardTasting";
 
 function App() { 
@@ -29,6 +30,7 @@ function App() {
       {" "}
       <Navbar />
       <div>{beersList && <RandomBeerList beerList={beersList} />}</div>
+      <Filter setBeersList={setBeersList} />
       <div>{beersList && <CardsList beerList={beersList} />}</div>
       {/* special syntax for beerslist to avoid autorefresh */}<StoryContent />;
       <Footer />
