@@ -4,15 +4,15 @@ function StoryContent() {
   return (
     <div>
       <main>
-        <h2>OUR BEER JOURNEY SO FAR</h2>
-        <h3>
+        <h2 className="storyTitle">OUR BEER JOURNEY SO FAR</h2>
+        <h3 className="storyIntro">
           The BrewCat story is a pretty wild tale. From small beginnings to
           global masterplans, here's a guide to our rollercoaster existence so
           far.
         </h3>
 
         <div className="history">
-          <p className="text1">
+          <p className="story1">
             <h4 className="years">2007-2008</h4>
             <br />
             2007 is the year our story starts with. Our founders James Watt and
@@ -34,10 +34,10 @@ function StoryContent() {
           <img
             src="https://nypost.com/wp-content/uploads/sites/2/2023/09/newspress-collage-ojlugay03-1694935044550.jpg?quality=75&strip=all"
             alt="HappyMoment"
-            className="img1"
+            className="storyimg1"
           />
 
-          <p className="text2">
+          <p className="story2">
             <h4 className="years">2009-2011</h4>
             <br />
             We launched the ground-breaking Equity For Punks, offering people
@@ -59,10 +59,10 @@ function StoryContent() {
           <img
             src="https://www.brewdog.com/images/cms/blog/1514197854QueensSpeech_1.jpg"
             alt="TheSpeech"
-            className="img2"
+            className="storyimg2"
           />
 
-          <p className="text3">
+          <p className="story3">
             <h4 className="years">2012-2014</h4>
             <br />A busy year, to say the least. We… open six new bars across
             the UK, get into a global media storm after Diageo cheat us out of
@@ -84,10 +84,10 @@ function StoryContent() {
           <img
             src="https://i.pinimg.com/originals/eb/64/ee/eb64ee68348fbf7341cd15aafb149bff.jpg"
             alt="TruckNorris"
-            className="img3"
+            className="storyimg3"
           />
 
-          <p className="text4">
+          <p className="story4">
             <h4 className="years">2015-2017</h4>
             <br />
             We open 17 new bars, including an epic new location in our home city
@@ -109,10 +109,10 @@ function StoryContent() {
           <img
             src="https://chicagoparent.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2022/08/family-friendly-breweries-chicago-photo-credit-old-irving-brewing-co-1024x613.jpg"
             alt="Brewery"
-            className="img4"
+            className="storyimg4"
           />
 
-          <p className="text5">
+          <p className="story5">
             <h4 className="years">2018-2020</h4>
             <br />
             The world's first craft beer hotel arrives! We open The Cathouse
@@ -135,10 +135,10 @@ function StoryContent() {
           <img
             src="https://img.delicious.com.au/aeKET_6G/del/2023/12/brewdog-ald-ipa-204077-2.png"
             alt="Collab"
-            className="img5"
+            className="storyimg5"
           />
 
-          <p className="text6">
+          <p className="story6">
             <h4 className="years">2021-2023</h4>
             <br />
             Our focus on planet comes to the fore, as we start work on our
@@ -159,7 +159,7 @@ function StoryContent() {
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyc0Ra_ZvQeMsG7JhwUZPZ-WC3rBYvn1eCaQ&usqp=CAU"
             alt="HappyMoment"
-            className="img6"
+            className="storyimg6"
           />
         </div>
       </main>
