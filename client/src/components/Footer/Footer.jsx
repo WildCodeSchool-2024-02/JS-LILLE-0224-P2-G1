@@ -14,7 +14,7 @@ function Footer() {
         <img
           className="alcohol_warning_picto"
           src="https://static.vecteezy.com/system/resources/thumbnails/015/309/486/small/warning-caution-sign-on-transparent-background-free-png.png"
-          alt=""
+          alt="a red attention icon"
         />
         <p className="alcohol_warning_text">
           PLEASE DO NOT SHARE WITH ANYONE UNDER THE LEGAL <br /> PURCHASE AGE

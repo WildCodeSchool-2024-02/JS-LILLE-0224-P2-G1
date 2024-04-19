@@ -8,7 +8,7 @@ function CardTasting() {
         <div className="card_tasting">
           <img
             src="https://lvdneng.rosselcdn.net/sites/default/files/dpistyles/ena_16_9_extra_big/node_1056546/53080682/public/thumbnails/image/_mg_2800.jpg?itok=zk1rzoic1628865323"
-            alt=""
+            alt="the beer brewery in Lille"
           />
           <div className="card-content">
             <h1>11/05/2024</h1>
@@ -37,7 +37,7 @@ function CardTasting() {
         <div className="card_tasting">
           <img
             src="https://img.freepik.com/photos-premium/boissons-romantiques-devant-tour-eiffel-au-coucher-du-soleil-paris-france_910371-195.jpg"
-            alt=""
+            alt="a beer below the eiffel tower"
           />
           <div className="card-content">
             <h1>15/06/2024</h1>
@@ -65,7 +65,7 @@ function CardTasting() {
         <div className="card_tasting">
           <img
             src="https://media.gqmagazine.fr/photos/5f7ddd8898c274a8707da089/16:9/w_2560%2Cc_limit/GettyImages-684133728.jpg"
-            alt=""
+            alt="a beer with flowing foam"
           />
           <div className="card-content">
             <h1>13/07/2024</h1>
@@ -95,7 +95,7 @@ function CardTasting() {
         <div className="card_tasting">
           <img
             src="https://www.lagourmetbox.com/media/Blog/1920391-inline.jpg"
-            alt=""
+            alt="a beer with flowing foam"
           />
           <div className="card-content">
             <h1>10/08/2024</h1>
@@ -123,7 +123,7 @@ function CardTasting() {
         <div className="card_tasting">
           <img
             src="https://img.freepik.com/photos-gratuite/verre-biere-mousseux-reflete-celebration-dans-bar-genere-par-ia_188544-34585.jpg?size=626&ext=jpg&ga=GA1.2.205140442.1709891244&semt=ais"
-            alt=""
+            alt="a beer in the dark"
           />
           <div className="card-content">
             <h1>14/09/2024</h1>
@@ -150,7 +150,7 @@ function CardTasting() {
         <div className="card_tasting">
           <img
             src="https://img.freepik.com/photos-premium/trois-verres-biere-plage_911101-617.jpg?w=1060"
-            alt=""
+            alt="three beer glasses on the beach lit by the sun"
           />
           <div className="card-content">
             <h1>12/10/2024</h1>

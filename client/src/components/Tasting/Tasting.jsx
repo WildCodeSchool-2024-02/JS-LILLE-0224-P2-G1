@@ -10,7 +10,7 @@ function Tasting() {
           participatory way, as beer knows how to be.
         </h3>
 
-        <img className="img_mobile" src="/assets/images/biere.png" alt="" />
+        <img className="img_mobile" src="/assets/images/biere.png" alt="a beer and a glass in drawing" />
 
         <div className="tasting_workshop">
           <p className="text0">
