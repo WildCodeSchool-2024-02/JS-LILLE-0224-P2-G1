@@ -1,0 +1,163 @@
+$color-primary-white: white;
+
+@media screen and (max-width: 992px) {
+  .card_tasting {
+    width: 24rem;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: $color-primary-white;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+
+    img {
+      position: absolute;
+      object-fit: scale-down;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #07b2d9;
+    }
+    h1 {
+      position: absolute;
+      inset: auto auto 544px 270px;
+      font-size: 20px;
+    }
+
+    h2 {
+      position: absolute;
+      font-size: 20px;
+      inset: auto auto 204px 30px;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    p,
+    a {
+      position: absolute;
+    }
+
+    p {
+      inset: auto auto 55px 20px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    a {
+      inset: auto auto 7px 30px;
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .css-i4bv87-MuiSvgIcon-root {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .tasting_container {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .card_tasting {
+    width: 24rem;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: $color-primary-white;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+
+    img {
+      position: absolute;
+      object-fit: scale-down;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      transition: opacity 0.2s ease-out;
+      background-color: #07b2d9;
+    }
+
+    h1 {
+      position: absolute;
+      inset: auto auto 544px 270px;
+      font-size: 20px;
+    }
+
+    h2 {
+      position: absolute;
+      font-size: 20px;
+      inset: auto auto 30px 30px;
+      margin: 0;
+      margin-bottom: 5px;
+      transition: inset 0.3s 0.3s ease-out;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    p,
+    a {
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+      transition: opacity 0.3s ease-out;
+    }
+
+    p {
+      inset: auto auto 72px 20px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    a {
+      inset: auto auto 3px 30px;
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover h2 {
+      inset: auto auto 250px 30px;
+      transition: inset 0.3s ease-out;
+    }
+
+    &:hover p,
+    &:hover a {
+      opacity: 1;
+      transition: opacity 0.5s 0.1s ease-in;
+    }
+
+    &:hover img {
+      transition: opacity 0.3s ease-in;
+      opacity: 1;
+    }
+  }
+
+  .card_tasting:nth-child(2),
+  .card_tasting:nth-child(3),
+  .card_tasting:nth-child(5),
+  .card_tasting:nth-child(6) {
+    margin-left: 2em;
+  }
+
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
+
+  .css-i4bv87-MuiSvgIcon-root {
+    margin-top: 4px;
+  }
+}
