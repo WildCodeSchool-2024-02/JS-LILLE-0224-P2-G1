@@ -2,13 +2,15 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Tasting from "./components/Tasting/Tasting";
-
+import StoryContent from "./components/StoryContent";
+import RandomBeerList from "./components/RandomBeer/RandomBeerList";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import CardsList from "./components/Cards/CardsList";
 import CardTasting from "./components/CardsTasting/CardTasting";
 
-function App() {
+function App() { 
+
   const [beersList, setBeersList] = useState();
 
   useEffect(() => {
@@ -26,8 +28,9 @@ function App() {
     <>
       {" "}
       <Navbar />
+      <div>{beersList && <RandomBeerList beerList={beersList} />}</div>
       <div>{beersList && <CardsList beerList={beersList} />}</div>
-      {/* special syntax for beerslist to avoid autorefresh */}
+      {/* special syntax for beerslist to avoid autorefresh */}<StoryContent />;
       <Footer />
       <Tasting />
       <CardTasting />

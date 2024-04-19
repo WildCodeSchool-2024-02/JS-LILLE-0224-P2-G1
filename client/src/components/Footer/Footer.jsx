@@ -28,7 +28,6 @@ function Footer() {
           </span>
           Legal Notice
         </div>
-
         <div className="social_networks_footer">
           <FontAwesomeIcon icon={faFacebook} className="fa_icon" />
           <FontAwesomeIcon icon={faInstagram} className="fa_icon" />

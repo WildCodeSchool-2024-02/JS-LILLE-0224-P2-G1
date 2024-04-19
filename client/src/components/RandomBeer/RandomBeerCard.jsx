@@ -1,7 +1,7 @@
-import "./Card.css";
+import "../Cards/Card.css";
 import PropTypes from "prop-types";
 
-function Card({ beer }) {
+function RandomBeerCard({ beer }) {
   return (
     <div className="card_container">
       <h3>{beer.name}</h3>
@@ -17,8 +17,7 @@ function Card({ beer }) {
     </div>
   );
 }
-
-Card.propTypes = {
+RandomBeerCard.propTypes = {
   beer: PropTypes.shape({
     name: PropTypes.string.isRequired,
     image_url: PropTypes.string.isRequired,
@@ -28,5 +27,4 @@ Card.propTypes = {
     description: PropTypes.string.isRequired,
   }).isRequired,
 };
-
-export default Card;
+export default RandomBeerCard;
