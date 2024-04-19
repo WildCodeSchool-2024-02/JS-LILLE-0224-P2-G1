@@ -4,7 +4,10 @@ import RandomBeerCard from "./RandomBeerCard";
 import "./randomBeerList.css";
 
 function RandomBeerList({ beerList }) {
-  const [randomBeer, setRandomBeer] = useState(null);
+  const [randomBeer, setRandomBeer] = useState(() => {
+    const randomIndex = Math.floor(Math.random() * beerList.length);
+    return beerList[randomIndex];
+  });
 
   const chooseRandomBeer = () => {
     const randomIndex = Math.floor(Math.random() * beerList.length);
