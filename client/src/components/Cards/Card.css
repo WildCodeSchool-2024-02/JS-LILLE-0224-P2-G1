@@ -2,6 +2,7 @@
   border: solid whitesmoke 0.2em;
   background-color: #60d8f3;
   border-radius: 2em;
+  box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
   padding: 1em;
   margin: 1em;
   height: fit-content;

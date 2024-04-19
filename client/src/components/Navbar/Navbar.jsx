@@ -22,7 +22,7 @@ function Navbar() {
         {/* This Menu compo is used for displaying menu-burger package so mobile only */}
 
         <div className="logo_bar">
-          <a href="http://localhost:3000//" className="link_backhome">
+          <a href="http://localhost:3000/" className="link_backhome">
             <img src={logoCat} alt="logo" className="logo_mobile" />
           </a>
         </div>
@@ -42,7 +42,6 @@ function Navbar() {
                 <Link to="/ourstory">Our Story</Link>
               </li>
               <li>
-                {/* <a href="/RandomBeer">Random Beer</a> */}
                 <Link to="/randombeer">Random Beer</Link>
               </li>
               <li>
