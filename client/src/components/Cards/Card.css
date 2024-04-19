@@ -8,7 +8,7 @@
   height: fit-content;
   min-height: 405px;
 }
-h3 {
+.beer_title {
   color: #023377;
   font-family: Pirata One;
   display: flex;
@@ -25,7 +25,8 @@ h3 {
   padding-bottom: 1em;
 }
 
-p {
+.beer_ABVIBU,
+.beer_type {
   font-family: Inter;
   display: flex;
   justify-content: center;

@@ -24,9 +24,9 @@ function Footer() {
       <div className="footer_bottom">
         <div>
           <span className="legal_mentions">
-            © Copyright BrewCat 2015-2024 - All rights reserved.{" "}
+            <p> © Copyright BrewCat 2015-2024 - All rights reserved. </p>
           </span>
-          Legal Notice
+          <p className="legal_notice">Legal Notice</p>
         </div>
         <div className="social_networks_footer">
           <FontAwesomeIcon icon={faFacebook} className="fa_icon" />
@@ -34,7 +34,11 @@ function Footer() {
           <FontAwesomeIcon icon={faYoutube} className="fa_icon" />
           <FontAwesomeIcon icon={faTwitter} className="fa_icon" />
         </div>
-        <div>Site created by Alexandre, Benoit, Elodie, Mathieu et Vincent</div>
+        <div>
+          <p className="creators">
+            Site created by Alexandre, Benoit, Elodie, Mathieu et Vincent
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 function RandomBeerCard({ beer }) {
   return (
     <div className="card_container">
-      <h3>{beer.name}</h3>
+      <h3 className="beer_title">{beer.name}</h3>
       <img className="beer_image" src={beer.image_url} alt="beer" />
       <div className="beer_infos">
-        <p>{beer.type}</p>
+        <p className="beer_type">{beer.type}</p>
         <div className="beer_properties">
           <p className="beer_ABVIBU"> {beer.abv}%</p>
           <p className="beer_ABVIBU">IBU: {beer.ibu}</p>
