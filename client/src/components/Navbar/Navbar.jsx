@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link } from "react-router-dom";
 import { bubble as Menu } from "react-burger-menu";
 import "./Navbar.scss";
@@ -45,7 +44,7 @@ function Navbar() {
                 <Link to="/randombeer">Random Beer</Link>
               </li>
               <li>
-                <a href="#">Tasting Sessions</a>
+                <Link to="/tasting">Tasting</Link>
               </li>
             </ul>
           </div>

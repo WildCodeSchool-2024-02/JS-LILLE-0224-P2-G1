@@ -7,6 +7,7 @@ import App from "./App";
 import HomePage from "./pages/HomePage";
 import RandomBeerPage from "./pages/RandomBeerPage";
 import StoryPage from "./pages/StoryPage";
+import TastingPage from "./pages/TastingPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/ourstory",
         element: <StoryPage />,
+      },
+      {
+        path: "/tasting",
+        element: <TastingPage />,
       },
     ],
   },
