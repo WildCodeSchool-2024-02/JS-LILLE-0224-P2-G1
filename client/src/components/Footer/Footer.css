@@ -55,6 +55,8 @@
     color: white;
   }
 
+.social_networks_footer .fa_icon:hover {
+  color: white;
   .fa_icon {
     transition: color 0.3s ease;
   }
