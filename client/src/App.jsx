@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import StoryContent from "./components/Story/StoryContent";
 import RandomBeerList from "./components/RandomBeer/RandomBeerList";
@@ -10,22 +9,11 @@ import Carousel from "./components/Carousel/Carousel";
 
 function App() {
   const [beersList, setBeersList] = useState();
-
-  useEffect(() => {
-    axios
-      .get("https://beers.utop.workers.dev")
-      .then((response) => {
-        setBeersList(response.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
-
+function App() {
   return (
     <>
-      {" "}
       <Navbar />
+<
       <div>
         <Carousel />
       </div>
@@ -33,7 +21,11 @@ function App() {
       <div>{beersList && <CardsList beerList={beersList} />}</div>
       {/* special syntax for beerslist to avoid autorefresh */}
       <StoryContent />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
+    
     </>
   );
 }

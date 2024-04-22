@@ -14,7 +14,7 @@ function Footer() {
         <img
           className="alcohol_warning_picto"
           src="https://static.vecteezy.com/system/resources/thumbnails/015/309/486/small/warning-caution-sign-on-transparent-background-free-png.png"
-          alt=""
+          alt="a red attention icon"
         />
         <p className="alcohol_warning_text">
           PLEASE DO NOT SHARE WITH ANYONE UNDER THE LEGAL <br /> PURCHASE AGE
@@ -22,21 +22,23 @@ function Footer() {
         </p>
       </div>
       <div className="footer_bottom">
-        <p>
+        <div>
           <span className="legal_mentions">
-            © Copyright BrewCat 2015-2024 - All right reserved.
+            <p> © Copyright BrewCat 2015-2024 - All rights reserved. </p>
           </span>
-          Legal Notice
-        </p>
+          <p className="legal_notice">Legal Notice</p>
+        </div>
         <div className="social_networks_footer">
           <FontAwesomeIcon icon={faFacebook} className="fa_icon" />
           <FontAwesomeIcon icon={faInstagram} className="fa_icon" />
           <FontAwesomeIcon icon={faYoutube} className="fa_icon" />
           <FontAwesomeIcon icon={faTwitter} className="fa_icon" />
         </div>
-        <p className="creators">
-          Created by Alexandre, Benoit, Elodie, Mathieu and Vincent
-        </p>
+        <div>
+          <p className="creators">
+            Site created by Alexandre, Benoit, Elodie, Mathieu et Vincent
+          </p>
+        </div>
       </div>
     </div>
   );

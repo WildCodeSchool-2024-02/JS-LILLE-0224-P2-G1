@@ -2,12 +2,13 @@
   border: solid whitesmoke 0.2em;
   background-color: #60d8f3;
   border-radius: 2em;
+  box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
   padding: 1em;
   margin: 1em;
   height: fit-content;
   min-height: 405px;
 }
-h3 {
+.beer_title {
   color: #023377;
   font-family: Pirata One;
   display: flex;
@@ -24,7 +25,8 @@ h3 {
   padding-bottom: 1em;
 }
 
-p {
+.beer_ABVIBU,
+.beer_type {
   font-family: Inter;
   display: flex;
   justify-content: center;
