@@ -22,7 +22,7 @@ function RandomBeerList({ beerList }) {
     } else {
       setRandomBeer(newRandomBeer);
     }
-    setStartAnimation(true); // Active l'animation
+    setStartAnimation(true);
   };
 
   return (
