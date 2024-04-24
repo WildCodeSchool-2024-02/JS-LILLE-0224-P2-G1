@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import RandomBeerCard from "./RandomBeerCard";
+import RandomAnimation from "./RandomAnimation";
 import "./randomBeerList.css";
 
 function RandomBeerList({ beerList }) {
@@ -9,18 +10,31 @@ function RandomBeerList({ beerList }) {
     return beerList[randomIndex];
   });
 
+  const [startAnimation, setStartAnimation] = useState(false);
+
   const chooseRandomBeer = () => {
     const randomIndex = Math.floor(Math.random() * beerList.length);
     const newRandomBeer = beerList[randomIndex];
-    setRandomBeer(newRandomBeer);
+    if (startAnimation === false) {
+      setTimeout(() => {
+        setRandomBeer(newRandomBeer);
+      }, 1600);
+    } else {
+      setRandomBeer(newRandomBeer);
+    }
+    setStartAnimation(true); // Active l'animation
   };
 
   return (
     <div className="beer_randomizing">
+      <div className="beer_animation">
+        <RandomAnimation startAnimation={startAnimation} />
+      </div>
       <button onClick={chooseRandomBeer} className="random_btn" type="button">
         {" "}
         Get A New beer{" "}
       </button>
+
       {randomBeer && (
         <RandomBeerCard
           beer={randomBeer}
