@@ -121,11 +121,11 @@
     border: solid 2px #03658c;
   }
   .div_btn {
+    z-index: 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 1em;
-    transform: translateY(-3em);
   }
 }
 
