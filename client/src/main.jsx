@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage";
 import RandomBeerPage from "./pages/RandomBeerPage";
 import StoryPage from "./pages/StoryPage";
 import TastingPage from "./pages/TastingPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/tasting",
         element: <TastingPage />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
       },
     ],
   },
