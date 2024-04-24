@@ -32,10 +32,31 @@ legend {
 }
 
 /* MIN MAX FILTER */
+.errorMessage {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: #f7d7e1;
+}
 
 /*VALIDATE BUTTON*/
 .validateButton {
   background-color: #07b2d9;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 18pt;
+  border: solid whitesmoke 0.1em;
+  margin: 0.5em 0.5em 0em;
+  color: #023377;
+  margin-left: 0.8em;
+}
+
+.validateButton:disabled {
+  background-color: grey;
   border-radius: 10px;
   font-family: Inter;
   font-size: 18pt;
