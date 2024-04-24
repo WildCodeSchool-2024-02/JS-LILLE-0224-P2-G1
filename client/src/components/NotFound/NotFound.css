@@ -2,7 +2,7 @@
 @media screen and (max-width: 992px) {
   /* Settings of the title*/
 
-  .Not_Found_Title {
+  .not_Found_Title {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
 
   /* Settings of the image*/
 
-  .Not_Found_Img {
+  .not_Found_Img {
     margin: auto;
     display: flex;
     width: 30vh;
@@ -26,7 +26,7 @@
 
   /* Settings of the text under the Image*/
 
-  .Not_Found_Text {
+  .not_Found_Text {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
 
   /* Settings of the Homepage link*/
 
-  .Home_Page_Link {
+  .home_Page_Link {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@
 /*Desktop version*/
 @media screen and (min-width: 993px) {
   /* Settings of the title*/
-  .Not_Found_Title {
+  .not_Found_Title {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@
 
   /* Settings of the image*/
 
-  .Not_Found_Img {
+  .not_Found_Img {
     margin: auto;
     display: flex;
     width: 50vh;
@@ -82,7 +82,7 @@
 
   /* Settings of the text under the Image*/
 
-  .Not_Found_Text {
+  .not_Found_Text {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@
 
   /* Settings of the Homepage link*/
 
-  .Home_Page_Link {
+  .home_Page_Link {
     margin: auto;
     display: flex;
     justify-content: center;
