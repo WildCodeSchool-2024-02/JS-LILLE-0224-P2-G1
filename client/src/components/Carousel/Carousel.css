@@ -1,0 +1,25 @@
+.slickSlidePanel {
+  margin: auto;
+  width: 50%;
+  height: 75vh;
+}
+
+.slider-container p {
+  margin: auto;
+  padding: 1em;
+  width: 50%;
+  height: 100%;
+  font-family: inter;
+  font-size: 17pt;
+  background-color: #60d8f3;
+}
+
+.slick-prev {
+  left: 30px !important;
+  z-index: 10;
+}
+
+.slick-next {
+  right: 30px !important;
+  z-index: 10;
+}
