@@ -12,7 +12,8 @@ function AgeVerification() {
   const handleChange = (event) => {
     const dob = event.target.value;
     setUserDOB(dob);
-    setUserAge(dobToAge(dob)); // Mettre à jour userAge à chaque changement de la date de naissance
+    setUserAge(dobToAge(dob));
+    // userAge update at every change
   };
 
   const handleAge = () => {
@@ -32,7 +33,7 @@ function AgeVerification() {
           Welcome on our site, to enter you must be over 18
         </p>
         <label htmlFor="DOB" className="labelDob">
-          Date of birthnp :
+          Date of birth :
         </label>
         <input
           className="dateOfBirth"
