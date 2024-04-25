@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./Card.scss";
 import PropTypes from "prop-types";
 
 function Card({ beer }) {
