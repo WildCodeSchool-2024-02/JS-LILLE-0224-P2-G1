@@ -5,6 +5,14 @@ function MinMax({
   setInputValueAbvMax,
   setInputValueIbuMin,
   setInputValueIbuMax,
+  setAbvMinError,
+  setAbvMaxError,
+  setIbuMinError,
+  setIbuMaxError,
+  abvMinError,
+  abvMaxError,
+  ibuMinError,
+  ibuMaxError,
   resetFilter,
   setReset,
 }) {
@@ -18,71 +26,51 @@ function MinMax({
     setInputValueAbvMax(55);
     setInputValueIbuMin(0);
     setInputValueIbuMax(150);
+    setAbvMinError("");
+    setAbvMaxError("");
+    setIbuMinError("");
+    setIbuMaxError("");
     setReset(!resetFilter);
   }
 
   const handleChangeAbvMin = (event) => {
-    let abvMin;
-    if (event.target.value > 55 || event.target.value < 0) {
-      // Si la valeur saisie est > AbvMax et < 0
-      alert("le chiffre doit etre entre 0 et 55");
-    } else if (event.target.value !== "") {
-      // Si la valeur saisie n'est pas vide, utiliser cette valeur
-      abvMin = event.target.value;
+    const value = parseFloat(event.target.value);
+    if (value > 55 || value < 0) {
+      setAbvMinError("The number must be between 0 and 55");
     } else {
-      // Si le champ est vide alors la valeur sera celle par defaut
-      abvMin = event.target.defaultValue;
+      setInputValueAbvMin(value);
+      setAbvMinError("");
     }
-
-    setInputValueAbvMin(abvMin);
   };
 
   const handleChangeAbvMax = (event) => {
-    let abvMax;
-    if (event.target.value > 55 || event.target.value < 0) {
-      // Si la valeur saisie est > AbvMax et < 0
-      alert("le chiffre doit etre entre 0 et 55");
-    } else if (event.target.value !== "") {
-      // Si la valeur saisie n'est pas vide, utiliser cette valeur
-      abvMax = event.target.value;
+    const value = parseFloat(event.target.value);
+    if (value > 55 || value < 0) {
+      setAbvMaxError("The number must be between 0 and 55");
     } else {
-      // Si le champ est vide alors la valeur sera celle par defaut
-      abvMax = event.target.defaultValue;
+      setInputValueAbvMax(value);
+      setAbvMaxError("");
     }
-
-    setInputValueAbvMax(abvMax);
   };
 
   const handleChangeIbuMin = (event) => {
-    let ibuMin;
-    if (event.target.value > 150 || event.target.value < 0) {
-      // Si la valeur saisie est > ibuMax et < 0
-      alert("le chiffre doit etre entre 0 et 150");
-    } else if (event.target.value !== "") {
-      // Si la valeur saisie n'est pas vide, utiliser cette valeur
-      ibuMin = event.target.value;
+    const value = parseFloat(event.target.value);
+    if (value > 150 || value < 0) {
+      setIbuMinError("The number must be between 0 and 150");
     } else {
-      // Si le champ est vide alors la valeur sera celle par defaut
-      ibuMin = event.target.defaultValue;
+      setInputValueIbuMin(value);
+      setIbuMinError("");
     }
-
-    setInputValueIbuMin(ibuMin);
   };
 
   const handleChangeIbuMax = (event) => {
-    let ibuMax;
-    if (event.target.value > 150 || event.target.value < 0) {
-      alert("le chiffre doit etre entre 0 et 150");
-      // Si la valeur saisie est > IbuMax et < 0
-    } else if (event.target.value !== "") {
-      // Si la valeur saisie n'est pas vide, utiliser cette valeur
-      ibuMax = event.target.value;
+    const value = parseFloat(event.target.value);
+    if (value > 150 || value < 0) {
+      setIbuMaxError("The number must be between 0 and 150");
     } else {
-      // Si le champ est vide alors la valeur sera celle par defaut
-      ibuMax = event.target.defaultValue;
+      setInputValueIbuMax(value);
+      setIbuMaxError("");
     }
-
-    setInputValueIbuMax(ibuMax);
   };
 
   return (
@@ -90,46 +78,50 @@ function MinMax({
       <section className="BlockFilter">
         <fieldset className="fieldsetFilter">
           <legend>Alcohol degrees (0 - 55) </legend>
-          <label htmlFor="abv">Min : </label>
+          <label htmlFor="abvMin">Min : </label>
           <input
             onChange={handleChangeAbvMin}
             type="number"
-            id="abv"
-            name="abv"
+            id="abvMin"
+            name="abvMin"
             min="0"
             max="55"
           />
-          <label htmlFor="abv">Max : </label>
+          <label htmlFor="abvMax">Max : </label>
           <input
             onChange={handleChangeAbvMax}
             type="number"
-            id="abv"
-            name="abv"
+            id="abvMax"
+            name="abvMax"
             min="0"
             max="55"
           />
+          {abvMinError && <p className="errorMessage">{abvMinError}</p>}
+          {abvMaxError && <p className="errorMessage">{abvMaxError}</p>}
         </fieldset>
 
         <fieldset className="fieldsetFilter">
           <legend>Bitterness (0 - 150) </legend>
-          <label htmlFor="ibu">Min : </label>
+          <label htmlFor="ibuMin">Min : </label>
           <input
             onChange={handleChangeIbuMin}
             type="number"
-            id="ibu"
-            name="ibu"
+            id="ibuMin"
+            name="ibuMin"
             min="0"
             max="150"
           />
-          <label htmlFor="ibu">Max : </label>
+          <label htmlFor="ibuMax">Max : </label>
           <input
             onChange={handleChangeIbuMax}
             type="number"
-            id="ibu"
-            name="ibu"
+            id="ibuMax"
+            name="ibuMax"
             min="0"
             max="150"
           />
+          {ibuMinError && <p className="errorMessage">{ibuMinError}</p>}
+          {ibuMaxError && <p className="errorMessage">{ibuMaxError}</p>}
         </fieldset>
       </section>
     </div>
@@ -141,6 +133,14 @@ MinMax.propTypes = {
   setInputValueAbvMax: PropTypes.func.isRequired,
   setInputValueIbuMin: PropTypes.func.isRequired,
   setInputValueIbuMax: PropTypes.func.isRequired,
+  setAbvMinError: PropTypes.func.isRequired,
+  setAbvMaxError: PropTypes.func.isRequired,
+  setIbuMinError: PropTypes.func.isRequired,
+  setIbuMaxError: PropTypes.func.isRequired,
+  abvMinError: PropTypes.func.isRequired,
+  abvMaxError: PropTypes.func.isRequired,
+  ibuMinError: PropTypes.func.isRequired,
+  ibuMaxError: PropTypes.func.isRequired,
   resetFilter: PropTypes.func.isRequired,
   setReset: PropTypes.func.isRequired,
 };

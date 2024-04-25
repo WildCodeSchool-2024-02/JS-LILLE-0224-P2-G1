@@ -32,6 +32,16 @@ legend {
 }
 
 /* MIN MAX FILTER */
+.errorMessage {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: #f7d7e1;
+}
 
 /*VALIDATE BUTTON*/
 .validateButton {

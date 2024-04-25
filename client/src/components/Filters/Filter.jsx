@@ -15,6 +15,10 @@ function Filter({ setBeersList }) {
   const [inputValueAbvMax, setInputValueAbvMax] = useState(55);
   const [inputValueIbuMin, setInputValueIbuMin] = useState(0);
   const [inputValueIbuMax, setInputValueIbuMax] = useState(150);
+  const [abvMinError, setAbvMinError] = useState("");
+  const [abvMaxError, setAbvMaxError] = useState("");
+  const [ibuMinError, setIbuMinError] = useState("");
+  const [ibuMaxError, setIbuMaxError] = useState("");
   const [reset, setReset] = useState(false);
 
   const handleClickValidate = () => {
@@ -72,6 +76,14 @@ function Filter({ setBeersList }) {
             setInputValueAbvMax={setInputValueAbvMax}
             setInputValueIbuMin={setInputValueIbuMin}
             setInputValueIbuMax={setInputValueIbuMax}
+            abvMinError={abvMinError}
+            setAbvMinError={setAbvMinError}
+            abvMaxError={abvMaxError}
+            setAbvMaxError={setAbvMaxError}
+            ibuMinError={ibuMinError}
+            setIbuMinError={setIbuMinError}
+            ibuMaxError={ibuMaxError}
+            setIbuMaxError={setIbuMaxError}
           />
           <Validate handleClickValidate={handleClickValidate} />
         </div>
