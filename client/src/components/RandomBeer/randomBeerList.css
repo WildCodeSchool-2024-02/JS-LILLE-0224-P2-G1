@@ -37,3 +37,13 @@
   justify-content: center;
   width: 40%;
 }
+
+.beer_animation {
+  margin-bottom: 2.5em;
+}
+
+@media screen and (min-width: 991px) {
+  .beer_animation {
+    padding-bottom: 2em;
+  }
+}
