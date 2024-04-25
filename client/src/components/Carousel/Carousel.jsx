@@ -48,7 +48,7 @@ function Carousel() {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    initialSlide: 1,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 992,
@@ -67,21 +67,12 @@ function Carousel() {
       <Slider {...settings}>
         <div>
           <p className="slickSlidePanel">
-            BrewCat is a multinational brewery and pub chain based in Ellon,
-            Scotland. With production of over 800,000 hectolitres, we claim to
-            be the "#1 Craft Brewer in Europe".James Watt and Martin Dickie
-            founded it in 2007, who together own 47% of the company. We also
-            hold the record for the world's strongest beer, the Sink The
-            Bismarck, an apparent 41% ABV, which helped us reclaiming the title
-            form the german based brewery Schorschbräu.The Physics won World's
-            Best Strong Pale Ale (Sub Category Winner) and Rip Tide won World's
-            Best Imperial Stout (Style Trophy Winner) at the 2007 World Beer
-            Awards, an annual competition organised by Beers of the World
-            magazine. Paradox Grain won a gold medal at the 2008 World Beer Cup
-            in the Wood and Barrel-aged Strong Beer Category. Hardcore IPA won
-            Gold at the 2010 World Beer Cup in the Imperial IPA category.
+            Welcome to our Brewcat beer website ! Here you can find every beer
+            we've created so far for your greatest delight. <br />
+            You can sort our beers to suit your tastes or give a try to a random
+            suggestion, book tasting events, and learn more about brand's story
           </p>
-          <h3>About us</h3>
+          <h3 className="carousel_title">Our concept ?</h3>
         </div>
         <div>
           <img
@@ -89,7 +80,7 @@ function Carousel() {
             className="slickSlidePanel"
             alt="BestBeer"
           />
-          <h3>Beer of the month</h3>
+          <h3 className="carousel_title">Beer of the month</h3>
         </div>
         <div>
           <img
@@ -97,7 +88,7 @@ function Carousel() {
             className="slickSlidePanel"
             alt="BeerTasting"
           />
-          <h3>Come and taste</h3>
+          <h3 className="carousel_title">Come and taste</h3>
         </div>
       </Slider>{" "}
     </div>
