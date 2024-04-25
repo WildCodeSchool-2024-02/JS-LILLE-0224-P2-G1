@@ -18,7 +18,7 @@ function AgeVerification() {
 
   const handleAge = () => {
     if (userAge >= 18) {
-      setLinkDirect("https://localhost:3000");
+      setLinkDirect("/home");
     } else {
       setLinkDirect("https://www.google.fr");
     }

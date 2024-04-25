@@ -35,7 +35,7 @@ function Navbar() {
             <ul className="nav_list">
               {/* TODO : ajouter les liens */}
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/home">Home</Link>
               </li>
               <li>
                 <Link to="/ourstory">Our Story</Link>
