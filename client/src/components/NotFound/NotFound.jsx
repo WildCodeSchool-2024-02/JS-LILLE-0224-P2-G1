@@ -4,24 +4,24 @@ function NotFound() {
   //
   return (
     <div className="notFound">
-      {/* Conteneur de la page d'erreur */}
+      {/* Error page container */}
       <h2 className="Not_Found_Title"> Error 404 - Not Found</h2>
-      {/* Titre de la page d'erreur */}
+      {/* Error page title */}
       <img
         src="https://media.istockphoto.com/id/1397562936/vector/cat-drinks-beer.jpg?s=612x612&w=0&k=20&c=Q9cd6sxayXMaUGegwFjsLoSkldlZlu_0k8xXJybBqbE="
         alt="AperoCat"
         className="not_Found_Img"
       />
-      {/* Image de la page d'erreur */}
+      {/* Error page image */}
       <p className="not_Found_Text">
         Are meow lost? Maybe meow should go there!{" "}
       </p>
-      {/* texte sous l'image */}
+      {/* under image text */}
       <a className="home_Page_Link" href="/">
         {" "}
         Homepage
       </a>
-      {/* lien de retour vers la Homepage */}
+      {/* HomePage link */}
     </div>
   );
 }
