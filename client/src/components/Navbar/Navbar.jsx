@@ -11,11 +11,14 @@ function Navbar() {
           <Link id="home" className="menu-item" to="/">
             Home
           </Link>
+          <Link id="random_beer" className="menu-item" to="/randombeer">
+            Random Beer
+          </Link>
           <Link id="story" className="menu-item" to="/ourstory">
             Our Story
           </Link>
-          <Link id="random_beer" className="menu-item" to="/randombeer">
-            Random Beer
+          <Link id="tasting" className="menu-item" to="/tasting">
+            Tasting Sessions
           </Link>
         </Menu>
         {/* This Menu compo is used for displaying menu-burger package so mobile only */}
