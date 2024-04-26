@@ -22,6 +22,7 @@
     transform: translateY(-2px);
   }
   color: #e1e1e1;
+}
 
 .random_Beer_Title {
   margin: auto;
@@ -74,16 +75,16 @@
     background-size: cover;
     background-attachment: fixed;
   }
-}
 
-.pour {
-  position: absolute;
-  width: 20px;
-  height: 200%;
-  background: none !important;
-  border-radius: 20px;
-  left: 10px;
-  z-index: -1;
-  bottom: 150%;
-  transition: 300ms ease-in;
+  .pour {
+    position: absolute;
+    width: 20px;
+    height: 200%;
+    background: none !important;
+    border-radius: 20px;
+    left: 10px;
+    z-index: -1;
+    bottom: 150%;
+    transition: 300ms ease-in;
+  }
 }
