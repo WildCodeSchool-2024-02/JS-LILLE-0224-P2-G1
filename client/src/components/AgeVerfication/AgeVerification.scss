@@ -1,0 +1,70 @@
+$primaryColor: #03658c;
+$secondaryColor: #e1e1e1;
+$backgroundColor: #0d0d0d;
+$thirdColor: #07b2d9;
+$titleFont: Pirata One;
+$secondFont: inter;
+
+.popInAge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_and_popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #03658c;
+  width: 50vw;
+  margin: auto;
+  margin-top: 3em;
+  box-shadow: 10px 8px 0px $thirdColor;
+}
+.dateOfBirth {
+  margin-top: 1em;
+  background-color: #03658c;
+  border: 1.5px solid $secondaryColor;
+  padding: 0.5em;
+  color: $secondaryColor;
+  ::-webkit-calendar-picker-indicator {
+    background-color: #07b2d9;
+  }
+}
+.logo_age {
+  width: 50vh;
+  padding: 2em 0em 1em 0em;
+}
+
+.intro {
+  font-family: $titleFont;
+  font-size: 2em;
+}
+
+.labelDob {
+  font-family: $titleFont;
+  font-size: 1.5em;
+}
+
+.age_btn {
+  margin: 1em 0;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 14px 24px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    transform 200ms,
+    background 200ms;
+  background: transparent;
+  color: $backgroundColor;
+  box-shadow: 0 0 0 3px $backgroundColor inset;
+  :hover {
+    transform: translateY(-2px);
+  }
+}
