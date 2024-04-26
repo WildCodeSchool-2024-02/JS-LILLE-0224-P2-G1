@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./Footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -22,22 +22,22 @@ function Footer() {
         </p>
       </div>
       <div className="footer_bottom">
-        <div>
-          <span className="legal_mentions">
-            <p> © Copyright BrewCat 2015-2024 - All rights reserved. </p>
+        <div className="legal_mentions">
+          <span className="white_text">
+            © Copyright BrewCat 2015-2024 - All rights reserved.
           </span>
-          <p className="legal_notice">Legal Notice</p>
+          {"\u00A0"}Legal Notice
         </div>
+
         <div className="social_networks_footer">
           <FontAwesomeIcon icon={faFacebook} className="fa_icon" />
           <FontAwesomeIcon icon={faInstagram} className="fa_icon" />
           <FontAwesomeIcon icon={faYoutube} className="fa_icon" />
           <FontAwesomeIcon icon={faTwitter} className="fa_icon" />
         </div>
-        <div>
-          <p className="creators">
-            Site created by Alexandre, Benoit, Elodie, Mathieu et Vincent
-          </p>
+
+        <div className="creators">
+          Site created by Alexandre, Benoit, Elodie, Mathieu et Vincent
         </div>
       </div>
     </div>
