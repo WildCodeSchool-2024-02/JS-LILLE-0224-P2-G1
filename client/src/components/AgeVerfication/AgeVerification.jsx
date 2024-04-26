@@ -1,5 +1,5 @@
 import dobToAge from "dob-to-age";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./AgeVerification.scss";
 import { Link } from "react-router-dom";
 import logoCat from "../../assets/images/BrewCat.svg";
@@ -8,21 +8,19 @@ function AgeVerification() {
   const [userDOB, setUserDOB] = useState("");
   const [userAge, setUserAge] = useState(0);
   const [linkDirect, setLinkDirect] = useState("");
-
   const handleChange = (event) => {
     const dob = event.target.value;
     setUserDOB(dob);
     setUserAge(dobToAge(dob));
     // userAge update at every change
   };
-
-  const handleAge = () => {
+  useEffect(() => {
     if (userAge >= 18) {
       setLinkDirect("/home");
     } else {
       setLinkDirect("https://www.google.fr");
     }
-  };
+  }, [userAge]);
   return (
     <div className="logo_and_popup">
       <a href="https://localhost:3000" className="link_backhome">
@@ -42,12 +40,9 @@ function AgeVerification() {
           value={userDOB}
           onChange={handleChange}
         />
-
-        <button type="button" onClick={handleAge} className="age_btn">
-          <Link id="home" to={linkDirect}>
-            Enter
-          </Link>
-        </button>
+        <Link id="home" to={linkDirect} className="age_btn">
+          Enter
+        </Link>
       </div>
     </div>
   );
