@@ -8,13 +8,15 @@ import HomePage from "./pages/HomePage";
 import RandomBeerPage from "./pages/RandomBeerPage";
 import StoryPage from "./pages/StoryPage";
 import TastingPage from "./pages/TastingPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import AgeVerification from "./components/AgeVerfication/AgeVerification";
 
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/Home",
         element: <HomePage />,
       },
       {
@@ -29,7 +31,15 @@ const router = createBrowserRouter([
         path: "/tasting",
         element: <TastingPage />,
       },
+      {
+        path: "*",
+        element: <NotFoundPage />,
+      },
     ],
+  },
+  {
+    path: "/",
+    element: <AgeVerification />,
   },
 ]);
 
