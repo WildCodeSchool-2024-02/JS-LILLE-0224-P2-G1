@@ -1,0 +1,111 @@
+/*Mobile version*/
+@media screen and (max-width: 992px) {
+  /* Settings of the title*/
+
+  .not_Found_Title {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Pirata One;
+    font-size: 18pt;
+    color: black;
+    padding: 1em 0 1em 0;
+  }
+
+  /* Settings of the image*/
+
+  .not_Found_Img {
+    margin: auto;
+    display: flex;
+    width: 30vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10em;
+  }
+
+  /* Settings of the text under the Image*/
+
+  .not_Found_Text {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12pt;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    padding-top: 1em;
+  }
+
+  /* Settings of the Homepage link*/
+
+  .home_Page_Link {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 12pt;
+    font-weight: 600;
+    font-style: italic;
+    color: #023373;
+    text-decoration: underline;
+    padding: 1em 0 2em 0;
+  }
+}
+
+/*Desktop version*/
+@media screen and (min-width: 993px) {
+  /* Settings of the title*/
+  .not_Found_Title {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Pirata One;
+    font-size: 26pt;
+    color: black;
+    padding: 1em 0 1em 0;
+  }
+
+  /* Settings of the image*/
+
+  .not_Found_Img {
+    margin: auto;
+    display: flex;
+    width: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10em;
+  }
+
+  /* Settings of the text under the Image*/
+
+  .not_Found_Text {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 18pt;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    padding-top: 1em;
+  }
+
+  /* Settings of the Homepage link*/
+
+  .home_Page_Link {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 18pt;
+    font-weight: 600;
+    font-style: italic;
+    color: #023373;
+    text-decoration: underline;
+    padding: 1em 0 2em 0;
+  }
+}

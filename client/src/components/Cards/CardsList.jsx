@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import Card from "./Card";
-import "./CardsList.css";
+import "./CardsList.scss";
 
 function CardsList({ beerList }) {
   const [indexOfLastBeer, setIndexOfLastBeer] = useState(12);
