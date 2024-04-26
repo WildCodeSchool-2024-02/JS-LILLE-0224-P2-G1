@@ -1,33 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap");
+/* RANDOM BEER BUTTON */
 .random_btn {
-  font-family: Roboto, sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #03658c;
-  padding: 10px 30px;
-  border: solid #72e5f2 2px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  border-radius: 50px;
-  transition: 973ms;
-  transform: translateY(0);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  background-color: #023377;
+  outline: 0;
+  border: 0;
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
   cursor: pointer;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.random_btn:hover {
-  transition: 973ms;
-  padding: 10px 50px;
-  transform: translateY(-0px);
-  background-color: #72e5f2;
-  color: #0d0d0d;
-  border: solid 2px #03658c;
-}
+  border-radius: 8px;
+  padding: 0rem 3rem;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2;
+  transition:
+    transform 200ms,
+    background 200ms;
+  color: whitesmoke;
+  box-shadow: 0 0 0 3px whitesmoke inset;
+  :hover {
+    transform: translateY(-2px);
+  }
+  color: #e1e1e1;
 
 .random_Beer_Title {
   margin: auto;
