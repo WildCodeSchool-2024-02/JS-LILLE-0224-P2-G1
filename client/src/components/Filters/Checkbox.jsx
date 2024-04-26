@@ -87,7 +87,7 @@ function Checkbox({ typesSelected, setTypesSelected, resetFilter, setReset }) {
 Checkbox.propTypes = {
   setTypesSelected: PropTypes.func.isRequired,
   typesSelected: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  resetFilter: PropTypes.func.isRequired,
+  resetFilter: PropTypes.bool.isRequired,
   setReset: PropTypes.func.isRequired,
 };
 
