@@ -6,6 +6,8 @@
   border: 0;
   margin-bottom: 0.3em;
   margin-top: 0.3em;
+  margin-left: 16px;
+  margin-right: 16px;
   cursor: pointer;
   border-radius: 8px;
   padding: 0rem 3rem;
@@ -86,5 +88,11 @@
     z-index: -1;
     bottom: 150%;
     transition: 300ms ease-in;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .beer_randomizing {
+    width: 100%;
   }
 }
