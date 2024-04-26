@@ -1,0 +1,77 @@
+/* FILTER BUTTON */
+.filterButton,
+.validateButton {
+  background-color: #023377;
+  outline: 0;
+  border: 0;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0rem 3rem;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2;
+  transition:
+    transform 200ms,
+    background 200ms;
+  color: whitesmoke;
+  box-shadow: 0 0 0 3px whitesmoke inset;
+  :hover {
+    transform: translateY(-2px);
+  }
+  color: #e1e1e1;
+}
+
+/* VALIDATE BUTTON */
+.validateButton {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* CHECKBOX FILTER */
+.fieldsetFilter {
+  width: 20rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: Inter;
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+  border: solid 1px;
+  margin-left: 1em;
+}
+
+label {
+  font-size: smaller;
+  padding-left: 0.2em;
+}
+
+legend {
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+/* MIN MAX FILTER */
+.errorMessage {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: #f7d7e1;
+}
+
+@media screen and (min-width: 991px) {
+  .BlockFilter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .FiltersContainer {
+    display: flex;
+  }
+}
