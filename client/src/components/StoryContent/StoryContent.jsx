@@ -1,4 +1,4 @@
-import "./StoryContent.css";
+import "./StoryContent.scss";
 
 function StoryContent() {
   return (

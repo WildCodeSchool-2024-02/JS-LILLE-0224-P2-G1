@@ -18,7 +18,8 @@ $secondFont: inter;
     background-color: $secondaryColor;
   }
   .logo_mobile {
-    width: 15vw;
+    width: 30vw;
+    max-width: 140px;
     margin: auto;
     display: flex;
   }
@@ -139,7 +140,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: $backgroundColor;
   }
   .main_logo {
-    width: 5vw;
+    width: 10vw;
+    max-width: 200px;
     display: flex;
     margin: auto;
   }
