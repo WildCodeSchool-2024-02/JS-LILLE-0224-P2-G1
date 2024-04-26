@@ -29,6 +29,23 @@
   border: solid 2px #03658c;
 }
 
+.random_Beer_Title {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: Pirata One;
+  font-size: 26pt;
+  color: #023373;
+  padding: 5em 0em 5em 0em;
+  background-color: darkgray;
+  background-image: url("https://t3.ftcdn.net/jpg/02/35/91/42/360_F_235914240_27BzK38AI9h0LNwOgzTkvfkQNupYyeWr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .beer_randomizing {
   display: flex;
   flex-direction: column;
@@ -46,4 +63,33 @@
   .beer_animation {
     padding-bottom: 2em;
   }
+
+  .random_Beer_Title {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Pirata One;
+    font-size: 34pt;
+    color: #023373;
+    padding: 3em 0em 3em 0em;
+    background-color: darkgray;
+    background-image: url("https://t3.ftcdn.net/jpg/02/35/91/42/360_F_235914240_27BzK38AI9h0LNwOgzTkvfkQNupYyeWr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.pour {
+  position: absolute;
+  width: 20px;
+  height: 200%;
+  background: none !important;
+  border-radius: 20px;
+  left: 10px;
+  z-index: -1;
+  bottom: 150%;
+  transition: 300ms ease-in;
 }
