@@ -116,7 +116,10 @@ $secondFont: inter;
     font-family: $titleFont;
     font-size: 1.5em;
   }
-
+  #home {
+    color: $secondaryColor;
+    text-decoration: none;
+  }
   .age_btn {
     margin: 1em 0;
     display: inline-block;
