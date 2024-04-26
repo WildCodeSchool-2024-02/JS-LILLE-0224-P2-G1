@@ -41,11 +41,12 @@ function Navbar() {
                 <Link to="/home">Home</Link>
               </li>
               <li>
-                <Link to="/ourstory">Our Story</Link>
-              </li>
-              <li>
                 <Link to="/randombeer">Random Beer</Link>
               </li>
+              <li>
+                <Link to="/ourstory">Our Story</Link>
+              </li>
+
               <li>
                 <Link to="/tasting">Tasting</Link>
               </li>
