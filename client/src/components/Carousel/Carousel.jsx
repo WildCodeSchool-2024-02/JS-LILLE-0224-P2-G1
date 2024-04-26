@@ -17,9 +17,9 @@ function SampleNextArrow(props) {
 }
 
 SampleNextArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.shape({}).isRequired,
-  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.shape({}),
+  onClick: PropTypes.func,
 };
 
 function SamplePrevArrow(props) {
@@ -34,9 +34,9 @@ function SamplePrevArrow(props) {
 }
 
 SamplePrevArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.shape({}).isRequired,
-  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.shape({}),
+  onClick: PropTypes.func,
 };
 
 function Carousel() {
