@@ -46,23 +46,25 @@ function CardsList({ beerList }) {
           <Card beer={beer} key={`${beer.name}-${beer.id}`} />
         ))}
       </div>
-      {indexOfLastBeer < sortedBeerList.length ? (
-        <button
-          className="display_more_btn"
-          onClick={handleSeeMore}
-          type="button"
-        >
-          See More
-        </button>
-      ) : (
-        <button
-          className="display_more_btn"
-          onClick={handleSeeLess}
-          type="button"
-        >
-          See Less
-        </button>
-      )}
+      <div className="More">
+        {indexOfLastBeer < sortedBeerList.length ? (
+          <button
+            className="display_more_btn"
+            onClick={handleSeeMore}
+            type="button"
+          >
+            See More
+          </button>
+        ) : (
+          <button
+            className="display_more_btn"
+            onClick={handleSeeLess}
+            type="button"
+          >
+            See Less
+          </button>
+        )}
+      </div>
     </>
   );
 }

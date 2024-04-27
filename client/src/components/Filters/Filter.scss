@@ -24,6 +24,11 @@
   color: #e1e1e1;
 }
 
+.DivFilter {
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+}
+
 /* VALIDATE BUTTON */
 .validateButton {
   margin-bottom: 0.5em;
@@ -40,6 +45,10 @@
   padding-bottom: 0.2em;
   border: solid 1px;
   margin-left: 1em;
+}
+
+.arrowRotate {
+  height: 2em;
 }
 
 label {
@@ -69,6 +78,12 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .DivFilter {
+    margin-top: 2.5em;
+    margin-left: 3em;
+    margin-right: 3em;
   }
 
   .FiltersContainer {

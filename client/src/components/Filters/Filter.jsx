@@ -49,7 +49,7 @@ function Filter({ setBeersList }) {
   };
 
   return (
-    <div>
+    <div className="DivFilter">
       <button
         type="button"
         className="filterButton"
@@ -58,7 +58,11 @@ function Filter({ setBeersList }) {
         Filter
       </button>
 
-      <FontAwesomeIcon onClick={handleReset} icon={faRotateRight} />
+      <FontAwesomeIcon
+        className="arrowRotate"
+        onClick={handleReset}
+        icon={faRotateRight}
+      />
       {dropdown && ( // si dropdown est "TRUE" affiche la div çi-dessous
         <div className="FiltersContainer">
           <Checkbox
