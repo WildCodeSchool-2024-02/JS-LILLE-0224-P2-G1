@@ -6,7 +6,7 @@ import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
 import Checkbox from "./Checkbox";
 import MinMax from "./MinMax";
 import Validate from "./Validate";
-import "./Filter.css";
+import "./Filter.scss";
 
 function Filter({ setBeersList }) {
   const [dropdown, setDropdown] = useState(false);

@@ -2,7 +2,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Carousel.css";
+import "./Carousel.scss";
 import PropTypes from "prop-types";
 
 function SampleNextArrow(props) {
@@ -10,16 +10,16 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#07b2d9" }}
+      style={{ ...style, display: "block", background: "none" }}
       onClick={onClick}
     />
   );
 }
 
 SampleNextArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.shape({}).isRequired,
-  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.shape({}),
+  onClick: PropTypes.func,
 };
 
 function SamplePrevArrow(props) {
@@ -27,16 +27,16 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "#07b2d9" }}
+      style={{ ...style, display: "block", background: "none" }}
       onClick={onClick}
     />
   );
 }
 
 SamplePrevArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.shape({}).isRequired,
-  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.shape({}),
+  onClick: PropTypes.func,
 };
 
 function Carousel() {

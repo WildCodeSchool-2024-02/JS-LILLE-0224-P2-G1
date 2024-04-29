@@ -1,0 +1,62 @@
+/* SEE MORE BUTTON */
+.display_more_btn {
+  justify-content: center;
+  background-color: #023377;
+  outline: 0;
+  border: 0;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0rem 3rem;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2;
+  transition:
+    transform 200ms,
+    background 200ms;
+  color: whitesmoke;
+  box-shadow: 0 0 0 3px whitesmoke inset;
+  :hover {
+    transform: translateY(-2px);
+  }
+  color: #e1e1e1;
+}
+
+/* A to Z SORTING BUTTON */
+.sorting_btn {
+  background-color: #023377;
+  outline: 0;
+  border: 0;
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0rem 3rem;
+  font-family: Inter;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2;
+  transition:
+    transform 200ms,
+    background 200ms;
+  color: whitesmoke;
+  box-shadow: 0 0 0 3px whitesmoke inset;
+  :hover {
+    transform: translateY(-2px);
+  }
+  color: #e1e1e1;
+}
+
+@media screen and (min-width: 991px) {
+  .beer_mapping {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}

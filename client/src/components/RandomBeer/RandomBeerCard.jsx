@@ -1,4 +1,4 @@
-import "../Cards/Card.css";
+import "../Cards/Card.scss";
 import PropTypes from "prop-types";
 
 function RandomBeerCard({ beer }) {

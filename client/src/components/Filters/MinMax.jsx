@@ -137,11 +137,11 @@ MinMax.propTypes = {
   setAbvMaxError: PropTypes.func.isRequired,
   setIbuMinError: PropTypes.func.isRequired,
   setIbuMaxError: PropTypes.func.isRequired,
-  abvMinError: PropTypes.func.isRequired,
-  abvMaxError: PropTypes.func.isRequired,
-  ibuMinError: PropTypes.func.isRequired,
-  ibuMaxError: PropTypes.func.isRequired,
-  resetFilter: PropTypes.func.isRequired,
+  abvMinError: PropTypes.string.isRequired,
+  abvMaxError: PropTypes.string.isRequired,
+  ibuMinError: PropTypes.string.isRequired,
+  ibuMaxError: PropTypes.string.isRequired,
+  resetFilter: PropTypes.bool.isRequired,
   setReset: PropTypes.func.isRequired,
 };
 

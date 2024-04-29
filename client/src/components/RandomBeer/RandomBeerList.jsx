@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import RandomBeerCard from "./RandomBeerCard";
 import RandomAnimation from "./RandomAnimation";
-import "./randomBeerList.css";
+import "./randomBeerList.scss";
 
 function RandomBeerList({ beerList }) {
   const [randomBeer, setRandomBeer] = useState(() => {
@@ -26,21 +26,24 @@ function RandomBeerList({ beerList }) {
   };
 
   return (
-    <div className="beer_randomizing">
-      <div className="beer_animation">
-        <RandomAnimation startAnimation={startAnimation} />
-      </div>
-      <button onClick={chooseRandomBeer} className="random_btn" type="button">
-        {" "}
-        Get A New beer{" "}
-      </button>
+    <div>
+      <h2 className="random_Beer_Title"> Which beer will you drink tonight?</h2>
+      <div className="beer_randomizing">
+        <div className="beer_animation">
+          <RandomAnimation startAnimation={startAnimation} />
+        </div>
+        <button onClick={chooseRandomBeer} className="random_btn" type="button">
+          {" "}
+          Get A New beer{" "}
+        </button>
 
-      {randomBeer && (
-        <RandomBeerCard
-          beer={randomBeer}
-          key={`${randomBeer.name}-${randomBeer.id}`}
-        />
-      )}
+        {randomBeer && (
+          <RandomBeerCard
+            beer={randomBeer}
+            key={`${randomBeer.name}-${randomBeer.id}`}
+          />
+        )}
+      </div>
     </div>
   );
 }

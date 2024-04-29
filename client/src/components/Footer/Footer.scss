@@ -26,11 +26,13 @@
   .footer_bottom p:nth-child(1) {
     font-size: 0.5em;
   }
+  
   .legal_mentions {
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: 10px;
   }
+  
   .social_networks_footer {
     display: flex;
     gap: 10px;
@@ -39,9 +41,11 @@
     justify-content: center;
     margin-bottom: 12px;
   }
+  
   .alcohol_warning_picto {
     display: none;
   }
+  
   .alcohol_warning {
     display: flex;
     flex-direction: row;
@@ -100,7 +104,6 @@
 
   .legal_mentions {
     font-size: 12px;
-
     margin-right: 5px;
   }
 

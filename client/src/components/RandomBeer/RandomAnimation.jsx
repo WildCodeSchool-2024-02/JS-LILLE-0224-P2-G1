@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./RandomAnimation.css";
+import "./RandomAnimation.scss";
 import PropTypes from "prop-types";
 
 function RandomAnimation({ startAnimation }) {
