@@ -157,8 +157,9 @@ function CardTasting() {
             <h2>BREST</h2>
             <p>
               BRASSERIE DU BARIL - Created in July 2015 in the heart of Brest,
-              this microbrewery produces organic craft beers. She will also
-              surprise you with its ephemeral brews. So time for tasting!!
+              this microbrewery produces organic and wildly hoppy craft beers.
+              The brewery will also surprise you with its ephemeral brews. So
+              it’s time for tasting!!
             </p>
             <a
               href="https://fr.gaultmillau.com/artisans/brasserie-du-baril"
