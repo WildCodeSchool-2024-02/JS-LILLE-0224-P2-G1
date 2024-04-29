@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useCallback } from "react"; // Import useCallback
 import { bubble as Menu } from "react-burger-menu";
 import "./Navbar.scss";
 import logoCat from "../../assets/images/BrewCat.svg";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState();
-  const closeMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [key, setKey] = useState(0);
+  const closeMenu = useCallback(() => {
     setIsOpen(false);
-  };
+    setKey((prevkey) => prevkey + 1);
+  }, []);
   return (
     <>
       <div className="sticky_top_bar">
-        <Menu isOpen={isOpen} onClick={closeMenu}>
+        <Menu key={key} isOpen={isOpen} onClick={closeMenu}>
           <Link id="home" className="menu-item" to="/home" onClick={closeMenu}>
             Home
           </Link>
