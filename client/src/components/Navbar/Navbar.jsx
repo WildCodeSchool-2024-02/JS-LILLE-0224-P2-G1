@@ -44,11 +44,12 @@ function Navbar() {
           </Link>
         </Menu>
         <div className="logo_bar">
-          <a href="http://localhost:3000/" className="link_backhome">
+          <a href="http://localhost:3000/home" className="link_backhome">
             <img src={logoCat} alt="logo" className="logo_mobile" />
           </a>
         </div>
       </div>
+      {/* Logo above for mobile version, below for desktop display */}
       <div className="logo_and_nav">
         <nav>
           <a href="http://localhost:3000/home" className="link_backhome">
