@@ -49,6 +49,7 @@
 
 .arrowRotate {
   height: 2em;
+  cursor: pointer;
 }
 
 label {
@@ -88,5 +89,12 @@ legend {
 
   .FiltersContainer {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .fieldsetFilter {
+    width: auto;
+    margin-right: 1em;
   }
 }

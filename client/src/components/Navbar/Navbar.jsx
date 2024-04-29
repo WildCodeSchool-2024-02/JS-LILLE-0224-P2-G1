@@ -8,7 +8,7 @@ function Navbar() {
     <>
       <div className="sticky_top_bar">
         <Menu>
-          <Link id="home" className="menu-item" to="/">
+          <Link id="home" className="menu-item" to="/home">
             Home
           </Link>
           <Link id="random_beer" className="menu-item" to="/randombeer">
@@ -24,14 +24,15 @@ function Navbar() {
         {/* This Menu compo is used for displaying menu-burger package so mobile only */}
 
         <div className="logo_bar">
-          <a href="http://localhost:3000/" className="link_backhome">
+          <a href="http://localhost:3000/home" className="link_backhome">
             <img src={logoCat} alt="logo" className="logo_mobile" />
           </a>
         </div>
       </div>
+      {/* Logo above for mobile version, below for desktop display */}
       <div className="logo_and_nav">
         <nav>
-          <a href="http://localhost:3000/" className="link_backhome">
+          <a href="http://localhost:3000/home" className="link_backhome">
             <img src={logoCat} alt="logo" className="main_logo" />
           </a>
           <div className="items_nav_list">
