@@ -5,8 +5,6 @@ import "./CardsList.scss";
 
 function CardsList({ beerList }) {
   const [indexOfLastBeer, setIndexOfLastBeer] = useState(12);
-  const [sortedBeerList, setSortedBeerList] = useState(beerList);
-  const [buttonName, setButtonName] = useState("Sort by Name (A-Z)");
 
   const handleSeeMore = () => {
     setIndexOfLastBeer(indexOfLastBeer + 9);
@@ -16,38 +14,15 @@ function CardsList({ beerList }) {
     setIndexOfLastBeer(12);
   };
 
-  const handleSorting = () => {
-    if (buttonName === "Sort by Name (A-Z)") {
-      const sortedList = [...beerList].sort((a, b) =>
-        a.name.localeCompare(b.name)
-      );
-      setSortedBeerList(sortedList);
-      setButtonName("Sort by Name (Z-A)");
-    } else if (buttonName === "Sort by Name (Z-A)") {
-      const reverseSortedList = [...beerList].sort((a, b) =>
-        b.name.localeCompare(a.name)
-      );
-      setSortedBeerList(reverseSortedList);
-      setButtonName("Unsort");
-    } else {
-      setSortedBeerList(beerList);
-      setButtonName("Sort by Name (A-Z)");
-    }
-  };
   return (
     <>
-      <div className="div_btn">
-        <button type="button" className="sorting_btn" onClick={handleSorting}>
-          {buttonName}
-        </button>
-      </div>
       <div className="beer_mapping">
-        {sortedBeerList.slice(0, indexOfLastBeer).map((beer) => (
+        {beerList.slice(0, indexOfLastBeer).map((beer) => (
           <Card beer={beer} key={`${beer.name}-${beer.id}`} />
         ))}
       </div>
       <div className="More">
-        {indexOfLastBeer < sortedBeerList.length ? (
+        {indexOfLastBeer < beerList.length ? (
           <button
             className="display_more_btn"
             onClick={handleSeeMore}
